@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My First AI Chatbot</title>
+  <link rel="stylesheet" href="/src/css/style.css" />
+</head>
+<body>
+  <main class="chat-container">
+    <header class="chat-header">
+      <h1>My First AI Chatbot</h1>
+      <p>Powered by Groq</p>
+    </header>
+
+    <section id="chat-box" class="chat-box" aria-live="polite">
+      <div class="message ai">
+        Hello! I'm your AI assistant. Ask me anything to get started.
+      </div>
+    </section>
+
+    <div id="loading" class="loading hidden">
+      <span></span><span></span><span></span>
+    </div>
+
+    <div id="error" class="error hidden" role="alert"></div>
+
+    <div class="input-area">
+      <input
+        id="user-input"
+        type="text"
+        placeholder="Type your message..."
+        autocomplete="off"
+        maxlength="2000"
+      />
+      <button id="send-btn" type="button">Send</button>
+    </div>
+  </main>
+
+  <script src="/src/js/script.js"></script>
+</body>
+</html>
